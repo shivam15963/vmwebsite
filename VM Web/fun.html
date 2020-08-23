@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
 
@@ -63,6 +64,109 @@
 #off li a:hover:not(.header), #on li a:hover:not(.header) {
   background-color: #eee;
 }
+
+
+/*
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: green;
+    background: -webkit-gradient(linear, left top, right top, from(green), to(cyan));
+    background: linear-gradient(to right, green 0%, cyan 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#green', endColorstr='cyan', GradientType=1);
+    -webkit-box-shadow: 0 2px 0 0 rgba(137, 247, 129, 0.5), 0 4px 0 0 rgba(137, 247, 129, 0.5);
+    box-shadow: 0 2px 0 0 rgba(137, 247, 129, 0.5), 0 4px 0 0 rgba(137, 247, 129, 0.5);
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 200px;
+  /* flex-box, center image in cell */
+  /*
+  display: -webkit-box;
+  display: -webkit-flex;
+  display:         flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  /* dim unselected */
+  /*
+  opacity: 0.7;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
+          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+/* brighten selected image */
+/*
+.carousel-cell.is-selected img {
+    border-radius: 20px;
+    box-shadow: 5px;
+  opacity: 1;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-filter: none;
+          filter: none;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell {
+    height: 400px;
+  }
+}
+
+@media screen and ( min-width: 960px ) {
+  .carousel-cell {
+    width: 60%;
+  }
+}
+
+
+/* buttons, no circle */
+/*
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+/* arrow color */
+/*
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* closer to edge */
+/*
+.flickity-prev-next-button.previous { left: 0; }
+.flickity-prev-next-button.next { right: 0; }
+/* hide disabled button */
+/*
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+*/
+
     </style>
 
 
@@ -97,8 +201,8 @@
                             <li><a href="gallery.html">Gallery</a></li>
                             <li><a href="video_gallery.html">Video Gallery</a></li>
                             <li><a href="members.html">Members</a></li>
-                            <li class="active"><a href="library.html">VM Library</a></li>
-                            <li><a href="fun.html">Fun-Zone</a></li>
+                            <li><a href="library.html">VM Library</a></li>
+                            <li class="active"><a href="fun.html">Fun-Zone</a></li>
                     <!--    <li><a href="blog.html">Blogs</a></li>	     -->
                         </ul>
                     </div>
@@ -117,8 +221,7 @@
                     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
                         <div class="header-text">
                             <div class="wow fadeInUp upper latter-space" data-wow-delay="0.2s">Vivekanand Manch</div>
-                            <h3 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">VM Library<span class="dot"></span></h3>
-
+                            <h3 class="header-title wow fadeInUp upper" data-wow-delay="0.4s">Fun-Zone<span class="dot"></span></h3>
                             <div class="wow fadeInUp" data-wow-delay="0.7s">
                                 <a href="#contact" class="bttn bttn-lg bttn-primary">Contact Now</a>
                             </div>
@@ -137,78 +240,74 @@
 
 
 
+<!--
+<section class="section-padding gray-bg">
+<div class="page-title"><center><h2 class="title">August 2020- Newsletter</h2></center></div>
+<div class="carousel js-flickity">
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+  </div>
+  <div class="carousel-cell">
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+  </div>
+</div>
+
+    </section>
+/-->
+
     <section class="section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6">
-                    <center><b><h2>Online Books</h2></b></center>
-                    <input type="text" id="online" onkeyup="onlineSearch()" placeholder="Search for online books.." >
-                    <center><b><p>HARRY POTTER BOOKS</p></b></center>
+        <div class="container">                
+                <div class="col-xs-12 col-sm-12">
+                    <center><b><h2>Previous Newsletters</h2></b></center>
+                    <input type="text" id="online" onkeyup="onlineSearch()" placeholder="Search for the month.." >
                         <ul id="on">
-                            <li><a href="https://ik.imagekit.io/slashit/harry-potter-book-1_IIfruhlFM.pdf" target="_blank">Harry Potter and the Philosophers Stone</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/HP-chamber-of-secret_f8O2MOHGE.pdf" target="_blank">Harry Potter and the Chamber of Secrets</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Harry-potter-prison-of-azkaban_m_FgnLxuP.pdf" target="_blank">Harry Potter and the Prisoner of Azkaban</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/HP-goblet-of-fire_icVJxzGv7.pdf" target="_blank">Harry Potter and the Goblet of Fire</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/harry-potter-and-the-order-of-the-phoenix_9lCM__ip5.pdf" target="_blank">Harry Potter and the Order of the Phoenix</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/HP-half-blood-prince_YcDm_HtXZ.pdf" target="_blank">Harry Potter and the Half Blood Prince</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Harry-Potter-and-the-Deathly-Hallows_7CDX0ATqn.pdf" target="_blank">Harry Potter and the Deathly Hallows</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Harry-Potter-Cursed-Child_MWSnArgzt.pdf" target="_blank">Harry Potter and the Cursed Child</a></li>
+                            <li><a href="https://ik.imagekit.io/slashit/july_digest__3__ij6wf3dlV.pdf" target="_blank">JULY 2020</a></li>
                         </ul>
-<br>
-                        <center><b><p>BIOGRAPHIES</p></b></center>
-                        <ul id="on">
-                            <li><a href="https://ik.imagekit.io/slashit/Gandhi-Truth_GZWv0msAP.pdf" target="_blank">Gandhi's truth</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/MLK2012_yUIeVWQLZ.pdf" target="_blank">Martin Luther King</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Karl_Marx__A_Biography___PDFDrive.com___7APtbLh2Z.pdf" target="_blank">Karl Marx</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Napoleon__A_Biography___PDFDrive.com___PZCavzcFt.pdf" target="_blank">Napolean</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Mother_Teresa_-_A_Biography___PDFDrive.com___N4d6A2Z4_.pdf" target="_blank">Mother Teresa</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The_Autobiography_of_Malcolm_X__As_Told_to_Alex_Haley___PDFDrive.com___9xkn0eDC7.pdf" target="_blank">The autobiography of Malcolm-X as told to Alex Haley</a></li>
-                        </ul>
-<br>
-                        <center><b><p>NOVELS</p></b></center>
-                        <ul id="on">
-                            <li><a href="https://ik.imagekit.io/slashit/The_Monk_Who_Sold_His_Ferrari___PDFDrive.com___PGCl_WGCD.pdf" target="_blank">The Monk who sold his Ferrari</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/When-the-Moon-Split_Vr4FxiFhb.pdf" target="_blank">When the moon splits</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/One_Indian_Girl_-_Chetan_Bhagat-Redicals_6Ha8N5nYZ.pdf" target="_blank">One Indian Girl- Chetan Bhagat</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The_Triumphant_Church__Kenneth_Hagin__433pg_XBVanJKGV.pdf" target="_blank">The triumphant Church</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The_Power_of_Now__A_Guide_to_Spiritual_Enlightenment___PDFDrive.com___Iv0dOQ5lG.pdf" target="_blank">The Power of Now: A Guide to Spiritual Enlightenment</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Wings_of_fire___PDFDrive.com___zTjCiGIoX.pdf" target="_blank">Wings of fire</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/covey_stephen_-_the_seven_habits_of_highly_effective_people_S8oz4gjzG.pdf" target="_blank">THE SEVEN HABITS OF HIGHLY EFFECTIVE PEOPLE</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Chetan_Bhagat_-three_mistakes_of_my_life_LZJUEj2wU.pdf" target="_blank">Three Mistakes of My Life by Chetan Bhagat</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Kingdom_of_Ash_-_Sarah_J._Maas___PDFDrive.com___n4DCU0Wua.pdf" target="_blank">Kingdom of Ash - Sarah J. Maas</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/mystery_short_stories_8yNuNl4gF.pdf" target="_blank">A Collection of Short Mystery Stories</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The_POWER_of_Your_Subconscious_Mind___PDFDrive.com___1Q2JZOA_m.pdf" target="_blank">The POWER of Your Subconscious Mind</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/alices-adventures-in-wonderland_bc8ee6TV5.pdf" target="_blank">Alice's Adventures in Wonderland</a></li>
-
-                            <li><a href="https://ik.imagekit.io/slashit/Accidental-Death_NJUj-hESs.pdf" target="_blank">Accidental Death</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Adventures-of-Pinocchio_ZKQD5TXWA.pdf" target="_blank">The adventures of Pinoccho</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Pride-and-Prejudice_c-U6f44Qd.pdf" target="_blank">Pride And Prejudice</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/Robinson-Crusoe_stfhZr_76.pdf" target="_blank">Robinson Crusoe</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The_Alchemist_41srTQWPg.pdf" target="_blank">The Alchemist</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The-Adventures-of-Sherlock-Holmes_N70XY5MLf.pdf" target="_blank">The Adventures of Sherlock Holmes</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The-Adventures-of-Tom-Sawyer_vivsfwnuI.pdf" target="_blank">The Adventures of Tom Sawyer</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/The-Three-Musketeers_40UxnLxcF.pdf" target="_blank">The Three Musketeers</a></li>
-                            <li><a href="https://ik.imagekit.io/slashit/winner-stands-alone-a-novel_i8RigsE96.pdf" target="_blank">Winner Stands Alone!</a></li>
-                        </ul>
-                </div>
-
-                <div class="col-xs-12 col-sm-6">
-                    <center><b><h2>Offline Books</h2></b></center>
-                    <input type="text" id="offline" onkeyup="offlineSearch()" placeholder="Search for offline books..">
-                        <center><br><br><br><br><b><p>"Offline Books are not currently available for sharing purposes due to lockdown. The list will be updated as soon as the college reopens. Till then take a look at the wide variety of online books."</p></b></center>
-                </div>
-                                
+                </div>                                
             </div>
         </div>
     </section>
 
 
-
     
-                            
 
 
 
+    <section class="section-padding gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <center><b><h2>Game Time</h2></b></center>
+                    <input type="text" id="online" onkeyup="onlineSearch()" placeholder="Search for the game.." >
+                        <ul id="on">
+                            <li><a href="https://ik.imagekit.io/slashit/findit_59LPQnjiD.pdf" target="_blank">Find IT!!</a></li>
+                            <li><a href="https://2048-the-game.netlify.app" target="_blank">2048 - The GAME</a></li>
+                        </ul>
+                </div>                         
+            </div>
+        </div>
+    </section>
 
 
 
@@ -228,15 +327,18 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
 */
                 (function() { // DON'T EDIT BELOW THIS LINE
                     var d = document, s = d.createElement('script');
-                    s.src = 'https://vm-library.disqus.com/embed.js';
+                    s.src = 'https://vm-funzone.disqus.com/embed.js';
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
                 </script>
-            <noscript>Please enable JavaScript to view the comments!</noscript>
-            <script id="dsq-count-scr" src="//vm-library.disqus.com/count.js" async></script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript> 
         </div>
     </section>
+
+
+
+
 
 
     <!-- Footer-Area -->
@@ -323,22 +425,6 @@ function onlineSearch() {
     }
 }
 
-function offlineSearch() {
-    var input, filter, ul, li, a, i, txtValue;
-    input = document.getElementById("offline");
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("off");
-    li = ul.getElementsByTagName("li");
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        txtValue = a.textContent || a.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
-}
 </script>
 
 
@@ -361,6 +447,16 @@ function offlineSearch() {
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
+
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+
+
+    <script id="dsq-count-scr" src="//vm-funzone.disqus.com/count.js" async></script>
+
+
+    
 </body>
 
 </html>
