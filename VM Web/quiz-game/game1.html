@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+
+<link rel="shortcut icon" type="image/ico" href="https://ik.imagekit.io/slashit/title_VGVHIMGFr.png" />
+<link rel="stylesheet" href="css/icofont.css">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+
+
+<section class="container">
+
+  
+  <div class="col-xs-12 col-md-12 col-sm-12">
+<center><h3 data-shadow='Who Am I?'>Who Am I?</h3></center></div>
+<br>
+<div class="col-xs-12 col-md-12 col-sm-12">
+<center>
+  <div class="questionBox" id="app">
+      <div class="questionContainer">
+
+        <header>
+          <h1 class="title is-6">Question: 2</h1>
+        </header>
+
+        <h2 class="titleContainer title">I am a loooong monument and I was made to commemorate the muslim authority in Delhi after the defeat of Delhi's last Hindu ruler. I have a spiral staircase of 379 steps. Also I am the first Indian monument to have an e-ticket facility.Identify me. </h2>
+
+
+          <div class="optionContainer">
+            <center><input class="option" type="text" placeholder="Enter Your Answer" name="ans" id="ans"></center></input>
+            
+        </div>
+
+
+        
+        <center><a class="button" onclick="answer()" id="hello">Submit</a></center><br>
+
+      </div>
+    </center>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+  function answer(){
+    var un = document.getElementById("ans").value;
+    if(un=="Qutub Minar"|| un=="Qutub minar"|| un=="qutub Minar"||un=="qutub minar")
+    {
+      alert("Correct Answer!!");
+      window.open("game2.html","_self");
+    }
+    else
+    {
+      alert("Wrong Answer! ");
+    }
+
+  } 
+
+</script>
+
+</body>
+</html>

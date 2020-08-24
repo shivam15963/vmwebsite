@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+
+<link rel="shortcut icon" type="image/ico" href="https://ik.imagekit.io/slashit/title_VGVHIMGFr.png" />
+<link rel="stylesheet" href="css/icofont.css">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+<div class="col-xs-12 col-md-12 col-sm-12">
+<center><h3 data-shadow='Who Am I?'>Who Am I?</h3></center></div>
+
+
+<section class="container">
+
+  
+<div class="col-xs-12 col-md-6 col-sm-12"><img src="gandhi.jpg" style="height: 500px; width: 500px; float: left; margin-left: 222px; margin-bottom: 20px; border-radius: 20px;"></div>  
+
+<div class="col-xs-12 col-md-6 col-sm-12" style="float: right; margin-right: 250px;">
+
+  <div class="questionBox" id="app">
+      <div class="questionContainer">
+
+        <header>
+          <h1 class="title is-6">Question: 7</h1>
+        </header>
+
+        <h2 class="titleContainer title">Guess the personality standing with Mahatma Gandhi Ji.</h2>
+
+
+          <div class="optionContainer">
+            <center><input class="option" type="text" placeholder="Enter Your Answer" name="ans" id="ans"></center></input>
+            
+        </div>
+<br><br>
+
+        
+        <center><a class="button" onclick="answer()" id="hello">Submit</a></center><br>
+
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+  function answer(){
+    var un = document.getElementById("ans").value;
+    if(un=="Sarojini Naidu"|| un=="sarojini naidu"|| un=="Sarojini naidu" || un=="sarojini Naidu" || un=="Sarojni Naidu"|| un=="sarojni naidu"|| un=="Sarojni naidu" || un=="sarojni Naidu")
+    {
+      alert("Correct Answer!!");
+      window.open("game6.html","_self");
+    }
+    else
+    {
+      alert("Wrong Answer! ");
+    }
+
+  } 
+
+</script>
+
+</body>
+</html>

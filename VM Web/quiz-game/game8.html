@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Game</title>
+
+<link rel="shortcut icon" type="image/ico" href="https://ik.imagekit.io/slashit/title_VGVHIMGFr.png" />
+<link rel="stylesheet" href="css/icofont.css">
+<link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+
+
+<section class="container">
+
+  
+  <div class="col-xs-12 col-md-12 col-sm-12">
+<center><h3 data-shadow='Who Am I?'>Who Am I?</h3></center></div>
+<br>
+<div class="col-xs-12 col-md-12 col-sm-12">
+<center>
+  <div class="questionBox" id="app">
+      <div class="questionContainer">
+
+        <header>
+          <h1 class="title is-6">Question: 10</h1>
+        </header>
+
+        <h2 class="titleContainer title">I was born with a copper spoon in my mouth. People often called me precocious. I spent my childhood in an academic atmosphere and that helped me in becoming a physics wizard. I contributed my bit in the feild of physics. In my late teens, with my newly married wife, I worked as a financial bureaucrat and was living a double life. Who am I? </h2>
+
+
+          <div class="optionContainer">
+            <center><input class="option" type="text" placeholder="Enter Your Answer" name="ans" id="ans"></center></input>
+            
+        </div>
+
+
+        
+        <center><a class="button" onclick="answer()" id="hello">Submit</a></center><br>
+
+      </div>
+    </center>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<script>
+  function answer(){
+    var un = document.getElementById("ans").value;
+    if(un=="CV Raman"|| un=="C.V.Raman"|| un=="CV raman"||un=="C.V.raman")
+    {
+      alert("Correct Answer!!");
+      window.open("game9.html","_self");
+    }
+    else
+    {
+      alert("Wrong Answer! ");
+    }
+
+  } 
+
+</script>
+
+</body>
+</html>
+
