@@ -66,26 +66,22 @@
 }
 
 
-/*
 
 * { box-sizing: border-box; }
 
 body { font-family: sans-serif; }
 
 .carousel {
-  background: green;
-    background: -webkit-gradient(linear, left top, right top, from(green), to(cyan));
-    background: linear-gradient(to right, green 0%, cyan 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#green', endColorstr='cyan', GradientType=1);
-    -webkit-box-shadow: 0 2px 0 0 rgba(137, 247, 129, 0.5), 0 4px 0 0 rgba(137, 247, 129, 0.5);
-    box-shadow: 0 2px 0 0 rgba(137, 247, 129, 0.5), 0 4px 0 0 rgba(137, 247, 129, 0.5);
+  background-image: url(https://ik.imagekit.io/slashit/a_qPa90b7W-.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 5px;
 }
 
 .carousel-cell {
-  width: 70%;
-  height: 200px;
-  /* flex-box, center image in cell */
-  /*
+  width: 100%;
+  height: 500px;
+ /*flex-box, center image in cell */
   display: -webkit-box;
   display: -webkit-flex;
   display:         flex;
@@ -97,22 +93,21 @@ body { font-family: sans-serif; }
 }
 
 .carousel-cell img {
-  display: block;
   max-width: 100%;
   max-height: 100%;
   /* dim unselected */
-  /*
+  
   opacity: 0.7;
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
-  -webkit-filter: blur(5px);
-          filter: blur(5px);
-  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s, -webkit-filter 0.3s, filter 0.3s;
-          transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, transform 0.5s, -webkit-filter 0.5s, filter 0.5s;
+          transition: opacity 0.5s, transform 0.5s, filter 0.5s;
 }
 
 /* brighten selected image */
-/*
+
 .carousel-cell.is-selected img {
     border-radius: 20px;
     box-shadow: 5px;
@@ -125,19 +120,18 @@ body { font-family: sans-serif; }
 
 @media screen and ( min-width: 768px ) {
   .carousel-cell {
-    height: 400px;
+    height: 550px;
   }
 }
 
 @media screen and ( min-width: 960px ) {
   .carousel-cell {
-    width: 60%;
+    width: 100%;
   }
 }
 
 
 /* buttons, no circle */
-/*
 .flickity-prev-next-button {
   width: 60px;
   height: 60px;
@@ -149,19 +143,19 @@ body { font-family: sans-serif; }
   opacity: 1;
 }
 /* arrow color */
-/*
+
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: black;
 }
 .flickity-prev-next-button.no-svg {
-  color: white;
+  color: black;
 }
 /* closer to edge */
-/*
+
 .flickity-prev-next-button.previous { left: 0; }
 .flickity-prev-next-button.next { right: 0; }
 /* hide disabled button */
-/*
+
 .flickity-prev-next-button:disabled {
   display: none;
 }
@@ -192,7 +186,7 @@ body { font-family: sans-serif; }
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span> 
                         </button>
-                        <a class="navbar-brand" href="#" style="color : white; font-size: 30px; font-family: Brighly Crush;">VIVEKANAND MANCH</a>
+                        <a class="navbar-brand" href="index.html">VIVEKANAND MANCH</a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="mainmenu">
                         <ul class="nav navbar-nav primary-menu">
@@ -240,41 +234,53 @@ body { font-family: sans-serif; }
 
 
 
-<!--
+
 <section class="section-padding gray-bg">
-<div class="page-title"><center><h2 class="title">August 2020- Newsletter</h2></center></div>
+<div class="page-title"><center><h2 class="title">The Revolt of 1857!!</h2></center></div>
 <div class="carousel js-flickity">
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+    <img src="https://ik.imagekit.io/slashit/card1_ss7DXFQxp6.png" />
   </div>
+
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+    <img src="https://ik.imagekit.io/slashit/1_-2XqZ5rt2q.png"/>
   </div>
+
+  
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+    <img src="https://ik.imagekit.io/slashit/1857__1__nCEFRBmPDW.png" />
   </div>
+
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+    <img src="https://ik.imagekit.io/slashit/ROTI___indicates_the_warning_for_the_farmers_to_be_ready._LOTUS___indicates_soldiers_and_kingdoms_to_be_ready._It_was_decided_to_start_the_revolt_on_13_May_1857._But_the_revolt_started_three_days_prior_to_what_was_7PDxhPxHJ.png" />
   </div>
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+    <img src="https://ik.imagekit.io/slashit/2_J0Qpq0OtK.png" />
   </div>
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+    <img src="https://ik.imagekit.io/slashit/Why_Did_the_Revolt_A93LZpLJX.png" />
   </div>
+
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+    <img src="https://ik.imagekit.io/slashit/WHO_ALL_SACRIFICED_THEIR_LIVES____3__MLHQXerjT.png" />
   </div>
+
   <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+    <img src="https://ik.imagekit.io/slashit/The_Revolt_of_1857_failed_but_it_really_had_a_great_importance_in_putting_India_out_of_British_Slavery__infact_it_is_marked_as_the_beginning_of_war_against_Britishers._Vivekanand_Manch_salutes_all_the_bravehearted_HedPGJSdE.png" />
   </div>
-  <div class="carousel-cell">
-    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
-  </div>
+
+  
+  
 </div>
 
     </section>
-/-->
+
 
     <section class="section-padding">
         <div class="container">                
@@ -283,6 +289,9 @@ body { font-family: sans-serif; }
                     <input type="text" id="online" onkeyup="onlineSearch()" placeholder="Search for the month.." >
                         <ul id="on">
                             <li><a href="https://ik.imagekit.io/slashit/july_digest__3__ij6wf3dlV.pdf" target="_blank">JULY 2020</a></li>
+                        </ul>
+                        <ul id="on">
+                            <li><a href="https://ik.imagekit.io/slashit/VM_Newsletter_zB58Uz_Or.pdf" target="_blank">AUGUST 2020</a></li>
                         </ul>
                 </div>                                
             </div>
@@ -303,7 +312,6 @@ body { font-family: sans-serif; }
                         <ul id="on">
                             <li><a href="https://ik.imagekit.io/slashit/findit_59LPQnjiD.pdf" target="_blank">Find IT!!</a></li>
                             <li><a href="https://2048-the-game.netlify.app" target="_blank">2048 - The GAME</a></li>
-                            <li><a href="quiz-game\game.html" target="_blank">Who Am I??</a></li>
                         </ul>
                 </div>                         
             </div>

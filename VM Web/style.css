@@ -93,7 +93,7 @@ a {
     outline: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-    color: #898989;
+    color: black;
 }
 
 
@@ -103,6 +103,7 @@ a:focus,
 a:hover {
     text-decoration: none;
     outline: none;
+    color: cyan;
 }
 
 img {
